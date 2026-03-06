@@ -1,5 +1,4 @@
 import { Component, HostListener } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { ButtonModule } from 'primeng/button'
 import { AboutComponent } from "./components/about/about.component";
 import { ResultsComponent } from "./components/results/results.component";

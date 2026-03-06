@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'about',
@@ -7,11 +7,20 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss']
 })
-export class AboutComponent implements OnInit {
+export class AboutComponent implements AfterViewInit {
+  imageVisible = false;
+  nameVisible = false;
 
-  constructor() { }
+  ngAfterViewInit(): void {
+    // Kép animáció rögtön betöltéskor
+    setTimeout(() => {
+      this.imageVisible = true;
+    }, 100); // kis delay, hogy a betöltés után induljon
 
-  ngOnInit() {
+    // Név animáció, rövid késéssel
+    setTimeout(() => {
+      this.nameVisible = true;
+    }, 800); // 0.8s késés
   }
 
 }

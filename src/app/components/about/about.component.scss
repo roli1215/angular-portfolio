@@ -1,0 +1,40 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 7%;
+}
+
+.about-image {
+  width: 35%;
+  height: 35%;
+  border-radius: 25%;
+  object-fit: cover;
+  box-shadow: 10px 30px 30px rgba(0,0,0,0.3);
+  margin-top: 5%;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.about-image.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.about-name {
+  margin-top: 2%;
+  margin-left: 6.8%;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #333;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.about-name.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
