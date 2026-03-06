@@ -1,0 +1,35 @@
+about, blog, results, sponsors, contact {
+  display: block;
+  height: 100vh;
+  width: 100%;
+}
+
+about {
+  background: #ff6b6b;
+}
+
+blog {
+  background: #4dabf7;
+}
+
+results {
+  background: #51cf66;
+}
+
+sponsors {
+  background: #ffd43b;
+}
+
+contact {
+  background: #845ef7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

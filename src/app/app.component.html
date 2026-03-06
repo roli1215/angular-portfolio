@@ -1,1 +1,36 @@
-<router-outlet></router-outlet>
+<nav class="side-nav">
+    <a href="#about" [class.active]="activeSection === 'about'">
+        <i class="fa-solid fa-user"></i>
+    </a>
+
+    <a href="#blog" [class.active]="activeSection === 'blog'">
+        <i class="fa-solid fa-pen"></i>
+    </a>
+
+    <a href="#results" [class.active]="activeSection === 'results'">
+        <i class="fa-solid fa-chart-line"></i>
+    </a>
+
+    <a href="#sponsors" [class.active]="activeSection === 'sponsors'">
+        <i class="fa-solid fa-handshake"></i>
+    </a>
+
+    <a href="#contact" [class.active]="activeSection === 'contact'">
+        <i class="fa-solid fa-envelope"></i>
+    </a>
+</nav>
+
+<div>
+    <about id="about"></about>
+    <blog id="blog"></blog>
+    <results id="results"></results>
+    <sponsors id="sponsors"></sponsors>
+    <contact id="contact"></contact>
+</div>
+<div>
+    <about id="about"></about>
+    <blog id="blog"></blog>
+    <results id="results"></results>
+    <sponsors id="sponsors"></sponsors>
+    <contact id="contact"></contact>
+</div>
