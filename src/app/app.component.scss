@@ -1,40 +1,37 @@
 .top-nav {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 10%;
+  width: 80%;
   height: 70px;
-
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
-
-  background: white;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  gap: 8%;
   z-index: 1000;
+  transition: all 0.3s ease;
 }
 
 .top-nav a {
   width: 45px;
   height: 45px;
-  background: white;
-  border-radius: 25%;
-
+  font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  color: black;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
   text-decoration: none;
-  transition: 0.3s;
+  transition: all 0.3s ease;
+  color: #333;
 }
 
 .top-nav a:hover {
-  transform: scale(1.2);
+  transform: translateY(-3px) scale(1.15);
+  color: #ffffff;
 }
 
 .top-nav a.active {
-  background: black;
-  color: white;
+  color:  #ffffff;
+  position: relative;
 }
