@@ -3,15 +3,15 @@
 
     <div class="left">
       <h1>
-        <span class="slide-from-left juhasz">Juhász</span><br>
-        <span class="slide-from-left delay patrik">Patrik</span>
+        <span class="slide-from-left juhasz">{{this.aboutService.aboutPatrik?.lastName}}</span><br>
+        <span class="slide-from-left delay patrik">{{this.aboutService.aboutPatrik?.firstName}}</span>
       </h1>
     </div>
 
     <div class="right">
       <h2>
-        <span class="slide-from-right magyar">10x magyar válogatott</span>
-        <span class="slide-from-right delay orszagos">6x országos bajnok</span>
+        <span class="slide-from-right magyar">{{this.aboutService.aboutPatrik?.title_first}}</span>
+        <span class="slide-from-right delay orszagos">{{this.aboutService.aboutPatrik?.title_second}}</span>
       </h2>
     </div>
 
